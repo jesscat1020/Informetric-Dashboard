@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Report - 20210720.112024</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="report-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="../informetric-logo.png" alt="Informetric Systems" class="company-logo">
+                    <div class="header-text">
+                        <h1>Informetric Systems</h1>
+                        <p>Batch Report: 20210720.112024</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button onclick="window.print()" class="print-btn">
+                        <span class="print-icon">🖨️</span>
+                        Print to PDF
+                    </button>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Alarms</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Prompts</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">5m 41s</span>
+                            <span class="stat-label">Duration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="summary-box">
+                <div class="info-card">
+                    <h4>Batch ID</h4>
+                    <p>20210720.112024</p>
+                </div>
+                <div class="info-card">
+                    <h4>Unit</h4>
+                    <p>TK1001</p>
+                </div>
+                <div class="info-card">
+                    <h4>Duration</h4>
+                    <p>5m 41s</p>
+                </div>
+                <div class="info-card">
+                    <h4>Author</h4>
+                    <p>JANE DOE</p>
+                </div>
+                <div class="info-card">
+                    <h4>Start Time</h4>
+                    <p>2021-07-20 07:32:21</p>
+                </div>
+                <div class="info-card">
+                    <h4>End Time</h4>
+                    <p>2021-07-20 07:33:21</p>
+                </div>
+                <div class="info-card">
+                    <h4>Procedure</h4>
+                    <p>Still Cleaning Procedure</p>
+                </div>
+                <div class="info-card">
+                    <h4>Total Alarms</h4>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="report-section">
+            <h2>Process Steps</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Duration</th>
+                            <th>Unit</th>
+                            <th>Operation</th>
+                            <th>Phase</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+            <tr>
+                <td>procedure</td>
+                <td>2021-07-20 07:32:18</td>
+                <td>2021-07-20 07:33:21</td>
+                <td>1m 3s</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>unitprocedure</td>
+                <td>2021-07-20 07:32:19</td>
+                <td>2021-07-20 07:33:21</td>
+                <td>1m 2s</td>
+                <td>TK1001</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>operation</td>
+                <td>2021-07-20 07:32:19</td>
+                <td>2021-07-20 07:33:21</td>
+                <td>1m 2s</td>
+                <td>TK1001</td>
+                <td>OP_STILL_CLEAN:1-1</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>phase</td>
+                <td>2021-07-20 07:32:21</td>
+                <td>2021-07-20 07:33:21</td>
+                <td>1m 0s</td>
+                <td>TK1001</td>
+                <td>OP_STILL_CLEAN:1-1</td>
+                <td>P_STILL_CLEAN:1-1</td>
+            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="report-section">
+            <h2>Alarms Log</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Unit</th>
+                            <th>Description</th>
+                            <th>State</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="5">No alarms recorded.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="report-section">
+            <h2>Operator Prompts</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="3">No operator prompts recorded.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="report-section">
+            <h2>Audit Trail Timeline</h2>
+            <div class="timeline">
+                <div class="empty-state"><div class="empty-icon">📋</div><h3>No Timeline Events</h3><p>No alarms or operator prompts were recorded for this batch.</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

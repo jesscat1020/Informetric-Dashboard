@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informetric Systems - Batch Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="report-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="informetric-logo.png" alt="Informetric Systems" class="company-logo">
+                    <div class="header-text">
+                        <h1>Informetric Systems</h1>
+                        <p>Batch Analysis Dashboard</p>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Total Batches</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">Active</span>
+                        <span class="stat-label">System Status</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">Ready</span>
+                        <span class="stat-label">Reports</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-controls">
+            <div class="dropdown-container">
+                <label class="dropdown-label" for="batchDropdown">Select Batch Report</label>
+                <select id="batchDropdown">
+                    <option value="">Choose a batch to view detailed report...</option>
+                </select>
+            </div>
+            <button id="printDashboardBtn" onclick="printCurrentBatch()" class="print-btn" style="display: none;">
+                <span class="print-icon">🖨️</span>
+                Print Current Batch to PDF
+            </button>
+        </div>
+        
+        <div class="section">
+            <div id="reportContent">
+                <div class="empty-state">
+                    <div class="empty-icon">📊</div>
+                    <h3>Welcome to Batch Analytics</h3>
+                    <p>Select a batch from the dropdown above to view detailed analysis including steps, alarms, operator prompts, and audit trails.</p>
+                    <p><strong>Available Batches:</strong> 6</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
